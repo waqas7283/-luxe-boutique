@@ -3,131 +3,42 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LUXE BOUTIQUE - Luxury Fashion | Okara</title>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+<title>LUXE BOUTIQUE - Collection 2026</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{background:#0A0A0A;color:#F5F1E8;font-family:'Montserrat',sans-serif;overflow-x:hidden}
-h1,h2,h3{font-family:'Cormorant Garamond',serif}
-.header{display:flex;justify-content:space-between;align-items:center;padding:18px 6%;border-bottom:1px solid #222;position:sticky;top:0;background:rgba(10,10,10,0.98);z-index:100}
-.logo{font-size:26px;letter-spacing:4px;font-weight:700;color:#D4AF37}
-.logo span{color:#fff;font-weight:300}
-.hero{display:flex;min-height:88vh;align-items:center;padding:0 6%;gap:4%}
-.hero-text{flex:1}
-.hero-text h4{color:#D4AF37;letter-spacing:5px;font-size:11px;margin-bottom:18px}
-.hero-text h1{font-size:58px;line-height:0.95;margin-bottom:18px}
-.hero-text h1 em{color:#D4AF37;font-style:italic;font-weight:400}
-.hero-text p{color:#888;line-height:1.8;max-width:440px;margin-bottom:30px;font-size:14px}
-.btn{display:inline-block;padding:14px 32px;text-decoration:none;letter-spacing:2px;font-size:11px;transition:0.3s;border:none;cursor:pointer}
-.btn-gold{background:#D4AF37;color:#000;font-weight:700}
-.btn-gold:hover{background:#fff}
-.hero-img{flex:1}
-.hero-img img{width:100%;height:580px;object-fit:cover;border:1px solid #222}
-.collection{padding:70px 6%}
-.section-title{text-align:center;margin-bottom:50px}
-.section-title h4{color:#D4AF37;letter-spacing:5px;font-size:11px;margin-bottom:12px}
-.section-title h2{font-size:44px}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
-.card{background:#111;border:1px solid #1a1a1a;transition:0.3s;overflow:hidden}
-.card:hover{border-color:#D4AF37;transform:translateY(-3px)}
-.card img{width:100%;height:360px;object-fit:cover}
-.card-info{padding:18px}
-.card-info h3{font-size:19px;margin-bottom:4px}
-.card-info p{color:#666;font-size:11px;letter-spacing:1px;margin-bottom:10px}
-.price{color:#D4AF37;font-size:18px;font-family:'Cormorant Garamond';font-weight:700}
-.order-btn{display:block;text-align:center;margin-top:12px;background:#000;color:#D4AF37;border:1px solid #D4AF37;padding:10px;text-decoration:none;font-size:11px;letter-spacing:1px;transition:0.3s}
-.order-btn:hover{background:#D4AF37;color:#000}
-.footer{text-align:center;padding:50px 6%;border-top:1px solid #1a1a1a;color:#555;font-size:11px;letter-spacing:1px;line-height:1.8}
-.whatsapp-float{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:26px;text-decoration:none;z-index:999;box-shadow:0 4px 15px rgba(0,0,0,0.4)}
-#chatbot-btn{position:fixed;bottom:20px;left:20px;background:#D4AF37;color:#000;padding:13px 22px;border-radius:30px;font-size:12px;letter-spacing:1px;font-weight:700;cursor:pointer;z-index:999;box-shadow:0 4px 15px rgba(212,175,55,0.3)}
-#chatbot-window{display:none;position:fixed;bottom:90px;left:20px;width:340px;max-width:90vw;height:420px;background:#111;border:1px solid #D4AF37;border-radius:12px;z-index:1000;flex-direction:column;overflow:hidden}
-#chat-header{background:#D4AF37;color:#000;padding:14px 18px;font-weight:700;font-size:13px;letter-spacing:1px;display:flex;justify-content:space-between;align-items:center}
-#chat-messages{flex:1;padding:15px;overflow-y:auto;background:#0A0A0A}
-.msg{margin-bottom:12px;padding:10px 14px;border-radius:10px;font-size:13px;line-height:1.5;max-width:85%}
-.bot{background:#1a1a1a;color:#eee;border:1px solid #222}
-.user{background:#D4AF37;color:#000;margin-left:auto;font-weight:500}
-#chat-input-area{display:flex;border-top:1px solid #222}
-#chat-input{flex:1;background:#000;color:#fff;border:none;padding:12px 15px;font-size:13px;outline:none}
-#chat-send{background:#D4AF37;color:#000;border:none;padding:0 18px;font-weight:700;cursor:pointer}
-@media(max-width:900px){.hero{flex-direction:column;padding-top:30px}.grid{grid-template-columns:1fr}.hero-text h1{font-size:38px}.hero-img img{height:400px}}
+*{margin:0;padding:0;box-sizing:border-box;font-family:serif}
+body{background:#0a0a0a;color:#fff}
+.header{background:#000;padding:12px 5%;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #222;position:sticky;top:0;z-index:99}
+.logo{letter-spacing:2px}.logo b{color:#d4af37}
+.hero{height:50vh;background:#0a0a0a;display:flex;align-items:center;justify-content:center;text-align:center}
+.hero h1{font-size:32px}.hero p{color:#d4af37;letter-spacing:4px;font-size:12px;margin-bottom:10px}
+.products{padding:20px 2%;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+@media(max-width:768px){.products{grid-template-columns:repeat(2,1fr)}}
+.card{background:#111;border:1px solid #1a1a1a;border-radius:4px;overflow:hidden}
+.card img{width:100%;height:220px;object-fit:cover;background:#222}
+.card-body{padding:10px}
+.card-body h3{font-size:13px;margin-bottom:3px}
+.card-body span{font-size:9px;color:#666;letter-spacing:1px}
+.price{color:#d4af37!important;font-size:12px!important;margin:8px 0;display:block;font-weight:700}
+.order-btn{border:1px solid #d4af37;color:#d4af37;background:transparent;width:100%;padding:8px;font-size:9px;letter-spacing:1px;cursor:pointer;display:block;text-align:center;text-decoration:none}
+.order-btn:hover{background:#d4af37;color:#000}
+.footer{text-align:center;padding:20px;font-size:9px;color:#555;border-top:1px solid #111;line-height:16px}
+.w-float{position:fixed;bottom:15px;right:15px;background:#25D366;width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:900;text-decoration:none;font-size:18px}
+.ai-btn{position:fixed;bottom:15px;left:15px;background:#d4af37;color:#000;padding:8px 12px;border-radius:20px;font-size:10px;font-weight:700;text-decoration:none}
 </style>
 </head>
 <body>
-
-<div class="header"><div class="logo">LUXE <span>BOUTIQUE</span></div><div style="color:#666;font-size:11px;letter-spacing:2px">OKARA • EST 2026</div></div>
-
-<div class="hero">
-<div class="hero-text">
-<h4>LUXURY EDITION 2026 • YOUR WHATSAPP: 03716649231</h4>
-<h1>Timeless <em>Elegance</em> Redefined</h1>
-<p>Premium black & gold boutique for modern Pakistani women. 6 exclusive designs with instant WhatsApp ordering to 03716649231</p>
-<a href="#collection" class="btn btn-gold">SHOP NOW</a>
+<div class="header"><div class="logo"><b>LUXE</b> BOUTIQUE</div><div style="font-size:8px;color:#555">OKARA - EST 2026</div></div>
+<div class="hero"><div><p>NEW ARRIVALS</p><h1>Collection 2026</h1></div></div>
+<div class="products">
+<div class="card"><img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=400"><div class="card-body"><h3>Noir Velvet Abaya</h3><span>LUXURY ABAYA</span><b class="price">Rs. 8,500</b><a href="https://wa.me/923716649231?text=Salam%20LUXE!%20I%20want%20to%20order:%20Noir%20Velvet%20Abaya%20-%20Rs.%208500" class="order-btn">ORDER ON WHATSAPP</a></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1581044777550-4cfa60707c03?w=400"><div class="card-body"><h3>Golden Lehenga</h3><span>BRIDAL COLLECTION</span><b class="price">Rs. 24,500</b><a href="https://wa.me/923716649231?text=Salam%20LUXE!%20I%20want%20to%20order:%20Golden%20Lehenga%20-%20Rs.%2024500" class="order-btn">ORDER ON WHATSAPP</a></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1539008835657-9e8e9680c956?w=400"><div class="card-body"><h3>Beige Silk Saree</h3><span>EVENING WEAR</span><b class="price">Rs. 12,900</b><a href="https://wa.me/923716649231?text=Salam%20LUXE!%20I%20want%20to%20order:%20Beige%20Silk%20Saree%20-%20Rs.%2012900" class="order-btn">ORDER ON WHATSAPP</a></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=400"><div class="card-body"><h3>Midnight Black Gown</h3><span>WESTERN LUXURY</span><b class="price">Rs. 18,000</b><a href="https://wa.me/923716649231?text=Salam%20LUXE!%20I%20want%20to%20order:%20Midnight%20Black%20Gown%20-%20Rs.%2018000" class="order-btn">ORDER ON WHATSAPP</a></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=400"><div class="card-body"><h3>Royal Gold Ensemble</h3><span>DESIGNER PRET</span><b class="price">Rs. 15,500</b><a href="https://wa.me/923716649231?text=Salam%20LUXE!%20I%20want%20to%20order:%20Royal%20Gold%20Ensemble%20-%20Rs.%2015500" class="order-btn">ORDER ON WHATSAPP</a></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=400"><div class="card-body"><h3>Champagne Kurta Set</h3><span>DAILY LUXURY</span><b class="price">Rs. 6,900</b><a href="https://wa.me/923716649231?text=Salam%20LUXE!%20I%20want%20to%20order:%20Champagne%20Kurta%20Set%20-%20Rs.%206900" class="order-btn">ORDER ON WHATSAPP</a></div></div>
 </div>
-<div class="hero-img"><img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?q=80&w=1000" alt="Luxe"></div>
-</div>
-
-<div class="collection" id="collection">
-<div class="section-title"><h4>NEW ARRIVALS</h4><h2>Collection 2026</h2></div>
-<div class="grid">
-<div class="card"><img src="https://images.unsplash.com/photo-1595777457583-95e059d581b5?q=80&w=600"><div class="card-info"><h3>Noir Velvet Abaya</h3><p>LUXURY ABAYA</p><div class="price">Rs. 8,500</div><a class="order-btn" href="#" onclick="orderNow('Noir Velvet Abaya - Rs 8500')">ORDER ON WHATSAPP</a></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1612336307429-8a898d10e223?q=80&w=600"><div class="card-info"><h3>Golden Lehenga</h3><p>BRIDAL COLLECTION</p><div class="price">Rs. 24,500</div><a class="order-btn" href="#" onclick="orderNow('Golden Lehenga - Rs 24500')">ORDER ON WHATSAPP</a></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1554412933-514a83d2f3c0?q=80&w=600"><div class="card-info"><h3>Beige Silk Saree</h3><p>EVENING WEAR</p><div class="price">Rs. 12,900</div><a class="order-btn" href="#" onclick="orderNow('Beige Silk Saree - Rs 12900')">ORDER ON WHATSAPP</a></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1581044777550-4cfa60707c03?q=80&w=600"><div class="card-info"><h3>Midnight Black Gown</h3><p>WESTERN LUXURY</p><div class="price">Rs. 18,000</div><a class="order-btn" href="#" onclick="orderNow('Midnight Black Gown - Rs 18000')">ORDER ON WHATSAPP</a></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?q=80&w=600"><div class="card-info"><h3>Royal Gold Ensemble</h3><p>DESIGNER PRET</p><div class="price">Rs. 15,500</div><a class="order-btn" href="#" onclick="orderNow('Royal Gold Ensemble - Rs 15500')">ORDER ON WHATSAPP</a></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?q=80&w=600"><div class="card-info"><h3>Champagne Kurta Set</h3><p>DAILY LUXURY</p><div class="price">Rs. 6,900</div><a class="order-btn" href="#" onclick="orderNow('Champagne Kurta Set - Rs 6900')">ORDER ON WHATSAPP</a></div></div>
-</div>
-</div>
-
-<div class="footer">LUXE BOUTIQUE © 2026 • Designed by Waqas Ali • Contact: 03716649231 • Okara, Pakistan<br>Black & Gold Luxury Edition • WhatsApp Ordering + AI Chatbot • Always Live on GitHub</div>
-
-<a href="https://wa.me/923716649231?text=Salam%20LUXE%20Boutique!%20I%20want%20to%20order" class="whatsapp-float" target="_blank">W</a>
-
-<div id="chatbot-btn" onclick="toggleChat()">💬 AI ASSISTANT</div>
-<div id="chatbot-window">
-<div id="chat-header"><span>LUXE AI - Instant Help</span><span style="cursor:pointer" onclick="toggleChat()">✕</span></div>
-<div id="chat-messages"><div class="msg bot">Salam! 👋 I am LUXE AI. I can answer anything:<br><br>• Size? S, M, L, XL available<br>• Price? Rs. 6900 - 24500<br>• Delivery? Okara 1 day, Other cities 2-3 days<br>• Payment? COD + Easypaisa<br>• WhatsApp: 03716649231<br><br>Ask me anything!</div></div>
-<div id="chat-input-area"><input id="chat-input" placeholder="Ask size, price, delivery..." onkeypress="if(event.key==='Enter')sendMsg()"><button id="chat-send" onclick="sendMsg()">SEND</button></div>
-</div>
-
-<script>
-const WHATSAPP_NUMBER = "923716649231";
-function orderNow(product){
-  const url = `https://wa.me/${WHATSAPP_NUMBER}?text=Salam%20LUXE!%20I%20want%20to%20order:%20${encodeURIComponent(product)}%20-%20My%20WhatsApp%2003716649231`;
-  window.open(url, '_blank');
-}
-function toggleChat(){
-  const w = document.getElementById('chatbot-window');
-  w.style.display = w.style.display === 'flex' ? 'none' : 'flex';
-  if(w.style.display==='flex'){w.style.flexDirection='column'}
-}
-function sendMsg(){
-  const input = document.getElementById('chat-input');
-  const text = input.value.trim();
-  if(!text) return;
-  addMsg(text, 'user');
-  input.value = '';
-  setTimeout(()=>{ replyBot(text.toLowerCase()); }, 500);
-}
-function addMsg(t, type){
-  const box = document.getElementById('chat-messages');
-  const d = document.createElement('div');
-  d.className = 'msg ' + type;
-  d.innerHTML = t;
-  box.appendChild(d);
-  box.scrollTop = box.scrollHeight;
-}
-function replyBot(q){
-  let ans = "";
-  if(q.includes('salam') || q.includes('hello') || q.includes('hi')) ans = "Walaikum Salam! 😊 Welcome to LUXE Boutique. Order directly on WhatsApp 03716649231. How can I help?";
-  else if(q.includes('size')) ans = "📏 Sizes: S (36), M (38-40), L (42-44), XL (46). All 6 designs available in S, M, L. Tell product name!";
-  else if(q.includes('price') || q.includes('kitne')) ans = "💰 Prices: Rs. 6,900 to Rs. 24,500. Check each product card. Which product you want?";
-  else if(q.includes('delivery') || q.includes('okara') || q.includes('lahore')) ans = "🚚 Delivery: Okara same/next day. Lahore 1-2 days. Other cities 2-3 days. FREE delivery above Rs. 5000! WhatsApp 03716649231";
-  else if(q.includes('payment') || q.includes('cod')) ans = "💳 Payment: Cash on Delivery all Pakistan. Also Easypaisa. 100% safe! WhatsApp 03716649231 for payment details";
-  else if(q.includes('return') || q.includes('exchange')) ans = "🔄 7 days easy exchange if size issue. Product must be unused with tags.";
-  else if(q.includes('whatsapp') || q.includes('order') || q.includes('buy') || q.includes('number')) ans = "✅ Click any 'ORDER ON WHATSAPP' button - it goes directly to 03716649231. Or click green W button bottom right! Owner will reply in 2 minutes.";
-  else ans = "Thanks! 😊<br><br>✔ Sizes: S, M, L, XL<br>✔ Delivery: 1-3 days all Pakistan<br>✔ Payment: COD<br>✔ WhatsApp: 03716649231<br><br>Ask about Size, Price, Delivery, Payment - or click WhatsApp button!";
-  addMsg(ans, 'bot');
-}
-</script>
+<div class="footer">LUXE BOUTIQUE © 2026 - Designed by Waqas Ali - Contact: 03716649231<br>Black & Gold Luxury Edition - WhatsApp Ordering</div>
+<a href="https://wa.me/923716649231?text=Salam%20LUXE!%20Boutique" class="w-float">W</a>
+<a class="ai-btn">● AI ASSISTANT</a>
 </body>
-  </html>
+</html>
